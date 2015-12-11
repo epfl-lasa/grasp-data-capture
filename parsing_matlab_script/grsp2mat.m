@@ -100,16 +100,23 @@ if (sizeOpt > 0)
 %         wrist = buff';
      
         %Object 1: obj1
-        buff = fread(fid, 15+1, '1*char');%Right_hand_root
+        buff = fread(fid, 10+1, '1*char');%hand5_root
         buff = fread(fid, 1, '1*int32'); % 128
         buff = fread(fid, DIMOPT, '1*double'); 
         obj1 = buff';   
         
         %Object 2: obj2
-        buff = fread(fid, 14+1, '1*char');%Left_hand_root
+        buff = fread(fid, 20+1, '1*char');%right_shoulder5_root
         buff = fread(fid, 1, '1*int32'); %  128 
         buff = fread(fid, DIMOPT, '1*double'); 
         obj2 = buff';
+        
+        %Object 1: obj1
+        buff = fread(fid, 10+1, '1*char');%neck5_root
+        buff = fread(fid, 1, '1*int32'); % 128
+        buff = fread(fid, DIMOPT, '1*double'); 
+        obj3 = buff';   
+
 
 
         % convert to mat format
@@ -118,7 +125,8 @@ if (sizeOpt > 0)
 %         track{o,1} = [wrist; bottlecap];
         obj1 = reshape(obj1,4,4)'; obj1(1:3,4) = obj1(1:3,4) / 10;
         obj2 = reshape(obj2, 4,4)'; obj2(1:3,4) = obj2(1:3,4) / 10;
-        track{o,1} = [obj1; obj2];
+        obj3 = reshape(obj3, 4,4)'; obj3(1:3,4) = obj3(1:3,4) / 10;
+        track{o,1} = [obj1; obj2; obj3];
 
     end
     track{sizeOpt} = -1;
