@@ -227,7 +227,7 @@
       <ObjectFileName>.\Debug\</ObjectFileName>
       <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <AdditionalIncludeDirectories>..\Dependencies\cyberglove\include\vhandtk;..\Dependencies\cyberglove\include\vtidm;..\Dependencies\cyberglove\include\vtiregistry;..\Dependencies\natnet\include;$(INCLUDE);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Dependencies\cyberglove\include\vhandtk;..\Dependencies\cyberglove\include\vtidm;..\Dependencies\cyberglove\include\vtiregistry;..\Dependencies\natnet\include;..\Dependencies\yarp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Midl>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -248,7 +248,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OutputFile>.\Debug\x64\API2_Demo.exe</OutputFile>
-      <AdditionalLibraryDirectories>..\Dependencies\cyberglove\lib\winnt_x64\Release;..\Dependencies\natnet\lib\x64;$(LIB);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\Dependencies\cyberglove\lib\winnt_x64\Release;..\Dependencies\natnet\lib\x64;..\Dependencies\yarp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>CGS_VirtualHandDevice.lib;CGS_VirtualHandCore.lib;NatNetLibStatic.lib;propsys.lib;shlwapi.lib;comctl32.lib;YARP_OS.lib;YARP_init.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ShowProgress>LinkVerbose</ShowProgress>
