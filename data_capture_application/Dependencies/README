@@ -1,0 +1,20 @@
+Steps to make communication with the Tekscan server work:
+ 
+1. Under the Administrator command window, register the new fsxproxy64.dll.  Go to the Dependencies/tekscan directory and execute:
+regsvr32 fsxproxy64.dll
+ 
+2. Keep the existing fsxproxy.dll registered.  Under the Administrator command window, register the existing 32bit fsxproxy.dll. Go to the location of \Windows\SysWOW64> and do the following:
+\Windows\SysWOW64>regsvr32 fsxproxy.dll
+ 
+3. Modify the Client Software.  This is already done in the code. So nothing to be done here.
+The following source code segment is the CoCreateInstance part for activating the Tekscan software.  The customer should change the third parameter of CoCreateInstance from CLSCTX_LOCAL_SERVER to CLSCTX_ALL for the 64bit client software to work without a problem.
+ 
+if(!g_CallBackServer)
+{
+    hr = CoCreateInstance (
+    clsid,
+    NULL,
+    CLSCTX_ALL,
+    IID_ICustom, 
+    (void **) &g_CallBackServer);
+}
