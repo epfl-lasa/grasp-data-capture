@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1196b58a-dbc0-4276-bf13-3bf5f1ce58c1}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{bd6d575a-a939-4c40-b138-8882c0af443c}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{e0b88e3c-2363-43ae-806c-a46a62ad871f}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Grasp Data Capture">
+      <UniqueIdentifier>{f8ff1b03-fcc4-423a-8d29-e82e20b8d5b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Grasp Data Capture">
+      <UniqueIdentifier>{a481ba65-24f0-4ace-acc6-27b0db2e07ee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DlgInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgwin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fsx_i.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FsxUDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FsxUser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FsxUVW.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonFileDialogApp.cpp">
+      <Filter>Source Files\Grasp Data Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="DataChannel.cpp">
+      <Filter>Source Files\Grasp Data Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCapture.cpp">
+      <Filter>Source Files\Grasp Data Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="TekscanChannel.cpp">
+      <Filter>Source Files\Grasp Data Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="TekscanClient.cpp">
+      <Filter>Source Files\Grasp Data Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackerChannel.cpp">
+      <Filter>Source Files\Grasp Data Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="GloveChannel.cpp">
+      <Filter>Source Files\Grasp Data Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="ForceTorqueChannel.cpp">
+      <Filter>Source Files\Grasp Data Capture</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialClass.cpp">
+      <Filter>Source Files\Grasp Data Capture</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FsxUser.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FsxUDoc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FsxUser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FsxUVW.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dlgwin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataChannel.h">
+      <Filter>Header Files\Grasp Data Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCapture.h">
+      <Filter>Header Files\Grasp Data Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="TekscanChannel.h">
+      <Filter>Header Files\Grasp Data Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="TekscanClient.h">
+      <Filter>Header Files\Grasp Data Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackerChannel.h">
+      <Filter>Header Files\Grasp Data Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="GloveChannel.h">
+      <Filter>Header Files\Grasp Data Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="ForceTorqueChannel.h">
+      <Filter>Header Files\Grasp Data Capture</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialClass.h">
+      <Filter>Header Files\Grasp Data Capture</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\FsxUDoc.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\FsxUser.ico">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\FsxUser.rc2">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+</Project>
