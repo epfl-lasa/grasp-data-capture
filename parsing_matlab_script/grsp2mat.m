@@ -4,7 +4,9 @@ function grsp2mat(fdname_bin, fname_bin, fdname_m)
 
 
 %% Initialise 
-fid = fopen([fdname_bin fname_bin '.grsp']);
+fpath = fullfile(fdname_bin, [fname_bin '.grsp']);
+disp(fpath)
+fid = fopen(fpath);
 allChar = fread(fid, '1*char');
 allChar = allChar';
 
@@ -180,7 +182,8 @@ if (sizeGlove > 0)
     glove{sizeGlove} = -1;
 end
 
-save([fdname_m fname_bin '.mat'], 'tactile', 'tactile_r', 'tactile_c', 'track', 'forcetorque', 'glove', 'time', 'time_ft', 'time_opt', 'time_glove');
+fpath = fullfile(fdname_m, [fname_bin, '.mat']);
+save(fpath, 'tactile', 'tactile_r', 'tactile_c', 'track', 'forcetorque', 'glove', 'time', 'time_ft', 'time_opt', 'time_glove');
 
 disp([int2str(length(tactile)) ' Tek ' int2str(length(forcetorque)) ' FT ' int2str(length(track)) ' Opt ' int2str(length(glove)) ' Glove -> ' fname_bin '.mat']);
 fclose all;
